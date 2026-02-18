@@ -49,7 +49,7 @@ For full license details, see the [LICENSE](../LICENSE) file.
 
 This pack bundles icons from:
 - **Source**: https://github.com/Templarian/MaterialDesign
-- **Version**: 7.4.47
+- **Version**: 2026.02.17
 
 ## Development
 
