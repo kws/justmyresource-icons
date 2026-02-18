@@ -1,11 +1,11 @@
 {
   "pack": {
     "name": "material-community",
-    "version": "7.4.47",
+    "version": "2026.02.17",
     "upstream_repo": "https://github.com/Templarian/MaterialDesign",
-    "upstream_tag": "7.4.47",
+    "upstream_tag": "2026.02.17",
     "upstream_license": "Apache-2.0",
-    "build_timestamp": "2026-02-18T10:41:08.600634Z",
+    "build_timestamp": "2026-02-18T12:12:14.280637Z",
     "sha256_archive": "3b17c7568cb83aec5f94d4882252a113b57be923ee7739d4ce44922b52945289",
     "prefixes": [
       "mdi"

@@ -1,6 +1,6 @@
 [project]
 name = "justmyresource-phosphor"
-version = "2.0.8"
+version = "2.0.8.post1"
 description = "JustMyResource pack: Phosphor Icons"
 authors = [
     {name = "Kaj Siebert", email = "kaj@k-si.com"}
@@ -38,6 +38,12 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/justmyresource_phosphor"]
+
+[tool.hatch.build]
+artifacts = [
+    "*.zip",
+    "pack_manifest.json",
+]
 
 
 

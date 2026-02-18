@@ -1,6 +1,6 @@
 [project]
 name = "justmyresource-heroicons"
-version = "2.2.0"
+version = "2.2.0.post1"
 description = "JustMyResource pack: Heroicons"
 authors = [
     {name = "Kaj Siebert", email = "kaj@k-si.com"}
@@ -38,6 +38,12 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/justmyresource_heroicons"]
+
+[tool.hatch.build]
+artifacts = [
+    "*.zip",
+    "pack_manifest.json",
+]
 
 
 

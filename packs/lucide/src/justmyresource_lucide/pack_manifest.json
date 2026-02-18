@@ -5,7 +5,7 @@
     "upstream_repo": "https://github.com/lucide-icons/lucide",
     "upstream_tag": "0.469.0",
     "upstream_license": "ISC",
-    "build_timestamp": "2026-02-18T09:16:35.710348Z",
+    "build_timestamp": "2026-02-18T12:11:45.203608Z",
     "sha256_archive": "6dc1c20650bed4c11aef4eae6dd4fae46232fb65f08502f72376a8479ec98ae3",
     "prefixes": [
       "lucide",

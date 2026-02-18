@@ -1,6 +1,6 @@
 [project]
 name = "justmyresource-material-icons"
-version = "4.0.0"
+version = "4.0.0.post1"
 description = "JustMyResource pack: Material Design Icons (Official)"
 authors = [
     {name = "Kaj Siebert", email = "kaj@k-si.com"}
@@ -39,6 +39,12 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/justmyresource_material_icons"]
+
+[tool.hatch.build]
+artifacts = [
+    "*.zip",
+    "pack_manifest.json",
+]
 
 
 

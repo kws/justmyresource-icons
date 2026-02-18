@@ -5,7 +5,7 @@
     "upstream_repo": "https://github.com/tailwindlabs/heroicons",
     "upstream_tag": "v2.2.0",
     "upstream_license": "MIT",
-    "build_timestamp": "2026-02-18T10:09:30.045167Z",
+    "build_timestamp": "2026-02-18T12:12:17.758815Z",
     "sha256_archive": "42bd31001127631a20270e7bd87ac13647bfcd628dd533e2ff31497068b4f7af",
     "prefixes": [
       "heroicons",

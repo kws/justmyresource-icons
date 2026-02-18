@@ -1,6 +1,6 @@
 [project]
 name = "justmyresource-mdi"
-version = "7.4.47"
+version = "7.4.47.post1"
 description = "JustMyResource pack: Material Design Icons (Community / Pictogrammers)"
 authors = [
     {name = "Kaj Siebert", email = "kaj@k-si.com"}
@@ -39,6 +39,12 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/justmyresource_mdi"]
+
+[tool.hatch.build]
+artifacts = [
+    "*.zip",
+    "pack_manifest.json",
+]
 
 
 
