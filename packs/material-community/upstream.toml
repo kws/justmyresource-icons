@@ -1,7 +1,7 @@
 [source]
 url = "https://github.com/Templarian/MaterialDesign/archive/2424e74.zip"
-tag = "7.4.47"
-sha256 = ""  # Fill when first fetched
+tag = "2026.02.17"
+sha256 = "3b17c7568cb83aec5f94d4882252a113b57be923ee7739d4ce44922b52945289"  # Fill when first fetched
 
 [license]
 spdx = "Apache-2.0"
