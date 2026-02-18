@@ -1,0 +1,103 @@
+---
+description: Schema definition for upstream.toml files in icon packs
+globs: **/upstream.toml
+---
+
+# upstream.toml Schema
+
+The `upstream.toml` file is the single source of truth for pack metadata that is useful for documentation or used in multiple places. It does NOT contain extraction logic (that lives in per-pack `pack.py` scripts).
+
+## Canonical Schema
+
+### Single-variant pack (e.g., Lucide)
+
+```toml
+[source]
+url = "https://github.com/owner/repo/archive/refs/tags/v1.0.0.tar.gz"
+tag = "v1.0.0"
+sha256 = ""  # Fill when first fetched
+
+[license]
+spdx = "ISC"
+copyright = "Copyright (c) Contributors"
+upstream_license_url = "https://github.com/owner/repo/blob/main/LICENSE"
+modifications = "SVGs extracted and repackaged; names normalized to kebab-case"
+
+[pack]
+prefixes = ["pack-name", "short"]
+description = "Pack description — icon count and style notes"
+source_url = "https://pack-website.com"
+variants = []
+default_variant = ""
+
+[build]
+module = "pack"  # Python module to import (relative to pack dir, default: "pack")
+entry = "extract"  # Function name to call (default: "extract")
+```
+
+### Multi-variant pack (e.g., Phosphor, Material Icons)
+
+```toml
+[source]
+url = "https://github.com/owner/repo/archive/refs/tags/v1.0.0.zip"
+tag = "v1.0.0"
+sha256 = "abc123..."
+
+[license]
+spdx = "MIT"
+copyright = "Copyright (c) Contributors"
+upstream_license_url = "https://github.com/owner/repo/blob/main/LICENSE"
+modifications = "SVGs extracted and repackaged; organized by variant"
+
+[pack]
+prefixes = ["pack-name", "short"]
+description = "Pack description — icon count and variant info"
+source_url = "https://pack-website.com"
+variants = ["variant1", "variant2", "variant3"]
+default_variant = "variant1"
+
+[build]
+module = "pack"  # Python module to import (relative to pack dir, default: "pack")
+entry = "extract"  # Function name to call (default: "extract")
+```
+
+## Field Descriptions
+
+### `[source]`
+- `url` (required): Direct download URL for the upstream archive. No template substitution.
+- `tag` (required): Upstream version tag (e.g., "v2.0.8", "0.469.0"). Used for pack versioning.
+- `sha256` (optional): SHA-256 checksum of the archive for verification. Empty string until first fetch.
+
+### `[license]`
+- `spdx` (required): SPDX license identifier (e.g., "MIT", "ISC", "Apache-2.0", "CC-BY-4.0").
+- `copyright` (required): Copyright holder string.
+- `upstream_license_url` (required): URL to the upstream license file.
+- `modifications` (optional): Description of modifications made during repackaging.
+
+### `[pack]`
+- `prefixes` (required): List of prefix aliases for this pack (e.g., `["lucide", "luc"]`).
+- `description` (required): Human-readable description of the pack.
+- `source_url` (required): URL to the upstream project homepage or repository.
+- `variants` (required): List of variant names. Empty list `[]` for single-variant packs.
+- `default_variant` (required): Default variant name for bare resource lookups. Empty string `""` for single-variant packs.
+
+### `[build]`
+- `module` (optional, default: `"pack"`): Python module name to import (relative to pack directory). The CLI will look for `{module}.py` in the pack directory.
+- `entry` (optional, default: `"extract"`): Function name to call. This function must match the `PackBundler` protocol: `extract(archive: ArchiveReader, config: UpstreamConfig) -> Iterator[ZipEntry]`.
+
+## What is NOT in upstream.toml
+
+- **No `[extract]` section**: Extraction logic (globs, variant mapping, path transformations) lives in per-pack `pack.py` scripts.
+- **No `repo` field**: The `url` field contains the complete download URL directly.
+- **No `url_template`**: Use concrete `url` values instead of templates.
+
+## Build Process
+
+The `[build]` section tells the CLI how to find and invoke the per-pack extraction logic:
+- The `module` field specifies which Python file to import (default: `pack.py`).
+- The `entry` field specifies which function to call (default: `extract`).
+- The entry function must implement the `PackBundler` protocol from `justmyresource_pack_tools.protocol`.
+
+## Manifest Generation
+
+The `pack_manifest.json` is generated from `upstream.toml` and includes all `[pack]` metadata (prefixes, variants, default_variant) so that runtime code can read it without parsing TOML.

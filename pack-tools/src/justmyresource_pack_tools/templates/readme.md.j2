@@ -1,0 +1,91 @@
+<!-- This file is auto-generated from upstream.toml. Do not edit manually. -->
+
+# {{ pack_name }}
+
+{{ description }}
+
+## Installation
+
+```bash
+pip install {{ package_name }}
+```
+
+## Usage
+
+```python
+from justmyresource import ResourceRegistry
+
+registry = ResourceRegistry()
+content = registry.get_resource("{{ default_prefix }}:icon-name")
+print(content.text)  # SVG content
+```
+
+## Prefixes
+
+This pack can be accessed using the following prefixes:
+{% if has_aliases %}
+- `{{ prefixes[0] }}` (primary)
+{% for prefix in aliases %}
+- `{{ prefix }}` (alias)
+{% endfor %}
+{% else %}
+- `{{ prefixes[0] }}`
+{% endif %}
+
+## Variants
+
+{% if has_variants %}
+This pack includes the following variants:
+{% for variant in variants %}
+- `{{ variant }}`{% if variant == default_variant %} (default){% endif %}
+{% endfor %}
+
+To access a specific variant, use the format `{{ default_prefix }}:variant/icon-name`:
+
+```python
+# Access default variant ({{ default_variant }})
+content = registry.get_resource("{{ default_prefix }}:icon-name")
+
+# Access specific variant
+content = registry.get_resource("{{ default_prefix }}:{{ variants[0] }}/icon-name")
+```
+{% else %}
+This pack has a single variant. Icons can be accessed directly:
+
+```python
+content = registry.get_resource("{{ default_prefix }}:icon-name")
+```
+{% endif %}
+
+## License
+
+- **Upstream License**: {{ license_spdx }}
+- **Copyright**: {{ copyright }}
+- **Upstream Source**: {{ source_url }}
+
+For full license details, see the [LICENSE](../LICENSE) file.
+
+## Upstream
+
+This pack bundles icons from:
+- **Source**: {{ source_url }}
+- **Version**: {{ tag }}
+
+## Development
+
+To build this pack from source:
+
+```bash
+# 1. Fetch upstream archive (downloads to cache/)
+pack-tools fetch <pack-name>
+
+# 2. Build icons.zip and manifest (processes from cache)
+pack-tools build <pack-name>
+
+# 3. Create distribution wheel
+pack-tools dist <pack-name>
+```
+
+The cache persists across builds. To force a fresh download, delete the `cache/` directory.
+
+
