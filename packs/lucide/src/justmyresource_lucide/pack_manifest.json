@@ -1,0 +1,28 @@
+{
+  "pack": {
+    "name": "lucide",
+    "version": "0.469.0",
+    "upstream_repo": "https://github.com/lucide-icons/lucide",
+    "upstream_tag": "0.469.0",
+    "upstream_license": "ISC",
+    "build_timestamp": "2026-02-18T09:16:35.710348Z",
+    "sha256_archive": "6dc1c20650bed4c11aef4eae6dd4fae46232fb65f08502f72376a8479ec98ae3",
+    "prefixes": [
+      "lucide",
+      "luc"
+    ],
+    "description": "Lucide icon library \u2014 1500+ minimalist SVG icons",
+    "source_url": "https://lucide.dev",
+    "variants": [],
+    "default_variant": ""
+  },
+  "contents": {
+    "icon_count": 1544,
+    "variants": [],
+    "format": "image/svg+xml",
+    "naming_convention": "kebab-case"
+  },
+  "style": {
+    "description": "Lucide icon library \u2014 1500+ minimalist SVG icons"
+  }
+}

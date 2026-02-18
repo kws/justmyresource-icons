@@ -1,0 +1,17 @@
+[source]
+url = "https://github.com/Templarian/MaterialDesign/archive/2424e74.zip"
+tag = "7.4.47"
+sha256 = ""  # Fill when first fetched
+
+[license]
+spdx = "Apache-2.0"
+copyright = "Copyright (c) Pictogrammers"
+upstream_license_url = "https://github.com/Templarian/MaterialDesign/blob/master/LICENSE"
+modifications = "SVGs extracted and repackaged; names normalized to kebab-case"
+
+[pack]
+prefixes = ["mdi"]
+description = "Material Design Icons (Community) — 7000+ icons from the Pictogrammers community"
+source_url = "https://github.com/Templarian/MaterialDesign"
+variants = []
+default_variant = ""

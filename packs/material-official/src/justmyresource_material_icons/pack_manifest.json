@@ -1,0 +1,40 @@
+{
+  "pack": {
+    "name": "material-official",
+    "version": "4.0.0",
+    "upstream_repo": "https://github.com/google/material-design-icons",
+    "upstream_tag": "4.0.0",
+    "upstream_license": "Apache-2.0",
+    "build_timestamp": "2026-02-18T10:41:34.795518Z",
+    "sha256_archive": "b1b068d625d5e15d6ec0059209cec67bc4c46e39c4611b859d6f6680dbf23934",
+    "prefixes": [
+      "material-icons",
+      "mi"
+    ],
+    "description": "Material Design Icons (Official) \u2014 2500+ Google design system icons with 5 style variants",
+    "source_url": "https://github.com/google/material-design-icons",
+    "variants": [
+      "filled",
+      "outlined",
+      "rounded",
+      "sharp",
+      "two-tone"
+    ],
+    "default_variant": "outlined"
+  },
+  "contents": {
+    "icon_count": 6862,
+    "variants": [
+      "filled",
+      "outlined",
+      "rounded",
+      "sharp",
+      "two-tone"
+    ],
+    "format": "image/svg+xml",
+    "naming_convention": "kebab-case"
+  },
+  "style": {
+    "description": "Material Design Icons (Official) \u2014 2500+ Google design system icons with 5 style variants"
+  }
+}

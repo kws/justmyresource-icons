@@ -1,0 +1,17 @@
+[source]
+url = "https://github.com/tailwindlabs/heroicons/archive/refs/tags/v2.2.0.tar.gz"
+tag = "v2.2.0"
+sha256 = ""  # Fill when first fetched
+
+[license]
+spdx = "MIT"
+copyright = "Copyright (c) Tailwind Labs"
+upstream_license_url = "https://github.com/tailwindlabs/heroicons/blob/master/LICENSE"
+modifications = "SVGs extracted and repackaged; names normalized to kebab-case; organized by size and style"
+
+[pack]
+prefixes = ["heroicons", "hero"]
+description = "Heroicons — 300+ Tailwind-aligned SVG icons"
+source_url = "https://heroicons.com"
+variants = ["24/outline", "24/solid", "20/solid", "16/solid"]
+default_variant = "24/outline"

@@ -1,0 +1,38 @@
+{
+  "pack": {
+    "name": "heroicons",
+    "version": "v2.2.0",
+    "upstream_repo": "https://github.com/tailwindlabs/heroicons",
+    "upstream_tag": "v2.2.0",
+    "upstream_license": "MIT",
+    "build_timestamp": "2026-02-18T10:09:30.045167Z",
+    "sha256_archive": "42bd31001127631a20270e7bd87ac13647bfcd628dd533e2ff31497068b4f7af",
+    "prefixes": [
+      "heroicons",
+      "hero"
+    ],
+    "description": "Heroicons \u2014 300+ Tailwind-aligned SVG icons",
+    "source_url": "https://heroicons.com",
+    "variants": [
+      "24/outline",
+      "24/solid",
+      "20/solid",
+      "16/solid"
+    ],
+    "default_variant": "24/outline"
+  },
+  "contents": {
+    "icon_count": 1288,
+    "variants": [
+      "24/outline",
+      "24/solid",
+      "20/solid",
+      "16/solid"
+    ],
+    "format": "image/svg+xml",
+    "naming_convention": "kebab-case"
+  },
+  "style": {
+    "description": "Heroicons \u2014 300+ Tailwind-aligned SVG icons"
+  }
+}

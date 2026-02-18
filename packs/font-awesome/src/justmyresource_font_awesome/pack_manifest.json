@@ -1,0 +1,36 @@
+{
+  "pack": {
+    "name": "font-awesome",
+    "version": "6.7.2",
+    "upstream_repo": "https://github.com/FortAwesome/Font-Awesome",
+    "upstream_tag": "6.7.2",
+    "upstream_license": "CC-BY-4.0",
+    "build_timestamp": "2026-02-18T09:30:35.195245Z",
+    "sha256_archive": "ecdaaa6d347cd7da82c66054770995e97f3d066a57e8d58ac9c517f0f77561fb",
+    "prefixes": [
+      "font-awesome",
+      "fa"
+    ],
+    "description": "Font Awesome Free \u2014 2000+ industry standard icons (solid, regular, brands)",
+    "source_url": "https://fontawesome.com",
+    "variants": [
+      "solid",
+      "regular",
+      "brands"
+    ],
+    "default_variant": "solid"
+  },
+  "contents": {
+    "icon_count": 2060,
+    "variants": [
+      "solid",
+      "regular",
+      "brands"
+    ],
+    "format": "image/svg+xml",
+    "naming_convention": "kebab-case"
+  },
+  "style": {
+    "description": "Font Awesome Free \u2014 2000+ industry standard icons (solid, regular, brands)"
+  }
+}

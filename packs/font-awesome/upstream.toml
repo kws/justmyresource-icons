@@ -1,0 +1,20 @@
+[source]
+url = "https://github.com/FortAwesome/Font-Awesome/releases/download/6.7.2/fontawesome-free-6.7.2-web.zip"
+tag = "6.7.2"
+sha256 = "ecdaaa6d347cd7da82c66054770995e97f3d066a57e8d58ac9c517f0f77561fb"  # Fill when first fetched
+
+[license]
+spdx = "CC-BY-4.0"
+copyright = "Copyright (c) Fonticons, Inc."
+upstream_license_url = "https://github.com/FortAwesome/Font-Awesome/blob/6.x/LICENSE.txt"
+attribution_required = true
+attribution_text = "Font Awesome Free icons by @fontawesome - https://fontawesome.com. License: CC BY 4.0 - https://creativecommons.org/licenses/by/4.0/"
+modifications = "SVGs extracted and repackaged; no modifications to icon content"
+brands_note = "The 'brands' subset has additional terms - see Font Awesome brand usage guidelines"
+
+[pack]
+prefixes = ["font-awesome", "fa"]
+description = "Font Awesome Free — 2000+ industry standard icons (solid, regular, brands)"
+source_url = "https://fontawesome.com"
+variants = ["solid", "regular", "brands"]
+default_variant = "solid"

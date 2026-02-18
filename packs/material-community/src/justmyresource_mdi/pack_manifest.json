@@ -1,0 +1,27 @@
+{
+  "pack": {
+    "name": "material-community",
+    "version": "7.4.47",
+    "upstream_repo": "https://github.com/Templarian/MaterialDesign",
+    "upstream_tag": "7.4.47",
+    "upstream_license": "Apache-2.0",
+    "build_timestamp": "2026-02-18T10:41:08.600634Z",
+    "sha256_archive": "3b17c7568cb83aec5f94d4882252a113b57be923ee7739d4ce44922b52945289",
+    "prefixes": [
+      "mdi"
+    ],
+    "description": "Material Design Icons (Community) \u2014 7000+ icons from the Pictogrammers community",
+    "source_url": "https://github.com/Templarian/MaterialDesign",
+    "variants": [],
+    "default_variant": ""
+  },
+  "contents": {
+    "icon_count": 7447,
+    "variants": [],
+    "format": "image/svg+xml",
+    "naming_convention": "kebab-case"
+  },
+  "style": {
+    "description": "Material Design Icons (Community) \u2014 7000+ icons from the Pictogrammers community"
+  }
+}

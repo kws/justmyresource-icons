@@ -1,0 +1,17 @@
+[source]
+url = "https://github.com/lucide-icons/lucide/archive/refs/tags/0.469.0.tar.gz"
+tag = "0.469.0"
+sha256 = ""  # Fill when first fetched
+
+[license]
+spdx = "ISC"
+copyright = "Copyright (c) Lucide Contributors"
+upstream_license_url = "https://github.com/lucide-icons/lucide/blob/main/LICENSE"
+modifications = "SVGs extracted and repackaged; names normalized to kebab-case"
+
+[pack]
+prefixes = ["lucide", "luc"]
+description = "Lucide icon library — 1500+ minimalist SVG icons"
+source_url = "https://lucide.dev"
+variants = []
+default_variant = ""

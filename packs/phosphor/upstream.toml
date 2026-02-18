@@ -1,0 +1,17 @@
+[source]
+url = "https://github.com/phosphor-icons/core/archive/refs/tags/v2.0.8.zip"
+tag = "v2.0.8"
+sha256 = "74a92a78bdcb969a0b6399fa0f3506878bbf9c7711395e3aeb26ea2343d1f3ef"  # Fill when first fetched
+
+[license]
+spdx = "MIT"
+copyright = "Copyright (c) Phosphor Icons"
+upstream_license_url = "https://github.com/phosphor-icons/core/blob/main/LICENSE"
+modifications = "SVGs extracted and repackaged; names normalized to kebab-case; organized by weight"
+
+[pack]
+prefixes = ["phosphor", "ph"]
+description = "Phosphor Icons — 1200+ flexible weight system icons"
+source_url = "https://github.com/phosphor-icons/core"
+variants = ["thin", "light", "regular", "bold", "fill", "duotone"]
+default_variant = "regular"

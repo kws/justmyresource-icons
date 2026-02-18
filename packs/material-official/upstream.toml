@@ -1,0 +1,17 @@
+[source]
+url = "https://github.com/google/material-design-icons/archive/refs/tags/4.0.0.tar.gz"
+tag = "4.0.0"
+sha256 = ""  # Fill when first fetched
+
+[license]
+spdx = "Apache-2.0"
+copyright = "Copyright (c) Google LLC"
+upstream_license_url = "https://github.com/google/material-design-icons/blob/master/LICENSE"
+modifications = "SVGs extracted and repackaged; names normalized to kebab-case; organized by variant"
+
+[pack]
+prefixes = ["material-icons", "mi"]
+description = "Material Design Icons (Official) — 2500+ Google design system icons with 5 style variants"
+source_url = "https://github.com/google/material-design-icons"
+variants = ["filled", "outlined", "rounded", "sharp", "two-tone"]
+default_variant = "outlined"

@@ -1,0 +1,42 @@
+{
+  "pack": {
+    "name": "phosphor",
+    "version": "v2.0.8",
+    "upstream_repo": "https://github.com/phosphor-icons/core",
+    "upstream_tag": "v2.0.8",
+    "upstream_license": "MIT",
+    "build_timestamp": "2026-02-18T10:09:38.467775Z",
+    "sha256_archive": "74a92a78bdcb969a0b6399fa0f3506878bbf9c7711395e3aeb26ea2343d1f3ef",
+    "prefixes": [
+      "phosphor",
+      "ph"
+    ],
+    "description": "Phosphor Icons \u2014 1200+ flexible weight system icons",
+    "source_url": "https://github.com/phosphor-icons/core",
+    "variants": [
+      "thin",
+      "light",
+      "regular",
+      "bold",
+      "fill",
+      "duotone"
+    ],
+    "default_variant": "regular"
+  },
+  "contents": {
+    "icon_count": 7488,
+    "variants": [
+      "thin",
+      "light",
+      "regular",
+      "bold",
+      "fill",
+      "duotone"
+    ],
+    "format": "image/svg+xml",
+    "naming_convention": "kebab-case"
+  },
+  "style": {
+    "description": "Phosphor Icons \u2014 1200+ flexible weight system icons"
+  }
+}
