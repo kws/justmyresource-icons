@@ -1,7 +1,7 @@
 [source]
-url = "https://github.com/lucide-icons/lucide/archive/refs/tags/0.469.0.tar.gz"
-tag = "0.469.0"
-sha256 = "6dc1c20650bed4c11aef4eae6dd4fae46232fb65f08502f72376a8479ec98ae3"  # Fill when first fetched
+url = "https://github.com/lucide-icons/lucide/archive/refs/tags/0.575.0.tar.gz"
+tag = "0.575.0"
+sha256 = "e1d269be455790969fcdab56e197f609a6551e7e0b1cdba1923ea535038ebe65"  # Fill when first fetched
 
 [license]
 spdx = "ISC"

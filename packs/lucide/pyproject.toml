@@ -1,6 +1,6 @@
 [project]
 name = "justmyresource-lucide"
-version = "0.469.0.post1"
+version = "0.575.0"
 description = "JustMyResource pack: Lucide icons"
 authors = [
     {name = "Kaj Siebert", email = "kaj@k-si.com"}

@@ -52,7 +52,7 @@ For full license details, see the [LICENSE](../LICENSE) file.
 
 This pack bundles icons from:
 - **Source**: https://lucide.dev
-- **Version**: 0.469.0
+- **Version**: 0.575.0
 
 ## Development
 

@@ -1,12 +1,12 @@
 {
   "pack": {
     "name": "lucide",
-    "version": "0.469.0",
+    "version": "0.575.0",
     "upstream_repo": "https://github.com/lucide-icons/lucide",
-    "upstream_tag": "0.469.0",
+    "upstream_tag": "0.575.0",
     "upstream_license": "ISC",
-    "build_timestamp": "2026-02-18T12:11:45.203608Z",
-    "sha256_archive": "6dc1c20650bed4c11aef4eae6dd4fae46232fb65f08502f72376a8479ec98ae3",
+    "build_timestamp": "2026-02-22T15:10:46.016464Z",
+    "sha256_archive": "e1d269be455790969fcdab56e197f609a6551e7e0b1cdba1923ea535038ebe65",
     "prefixes": [
       "lucide",
       "luc"
@@ -17,7 +17,7 @@
     "default_variant": ""
   },
   "contents": {
-    "icon_count": 1544,
+    "icon_count": 1688,
     "variants": [],
     "format": "image/svg+xml",
     "naming_convention": "kebab-case"
